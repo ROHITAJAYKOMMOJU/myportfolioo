@@ -627,28 +627,6 @@ footer p{
 
 }
 
-.about-image{
-
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.about-image img{
-
-    width:360px;
-
-    border-radius:25px;
-
-    border:5px solid var(--primary);
-
-    box-shadow:0 0 35px rgba(56,189,248,.25);
-
-}
-
 .about-content{
 
     flex:1.4;
@@ -661,62 +639,95 @@ footer p{
 
 }
 
-.about-cards{
+.about-stats{
 
-    margin-top:40px;
+    flex:1;
 
     display:flex;
 
-    gap:25px;
+    gap:20px;
+
+    justify-content:center;
 
     flex-wrap:wrap;
 
 }
 
-.about-card{
-
-    background:var(--surface);
+.stat-card{
 
     width:180px;
 
-    padding:30px 20px;
+    height:220px;
+
+    background:var(--surface);
+
+    border:1px solid rgba(255,255,255,.08);
 
     border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
 
     text-align:center;
 
     transition:.35s ease;
 
-    border:1px solid rgba(255,255,255,.08);
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
 
 }
 
-.about-card:hover{
+.stat-icon{
 
-    transform:translateY(-10px) scale(1.02);
+    font-size:40px;
 
-    background:var(--secondary);
+    margin-bottom:15px;
 
 }
 
-.about-card h3{
+.stat-card h3{
 
     color:var(--primary);
 
-    font-size:30px;
+    font-size:32px;
 
     margin-bottom:10px;
 
 }
 
-.about-card p{
+.stat-card p{
 
     color:var(--muted);
 
-    font-size:15px;
-
 }
 
+@media(max-width:900px){
+
+    .about-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .about-stats{
+
+        margin-top:40px;
+
+    }
+
+}
 /* ===========================
    EXPERIENCE
 =========================== */
