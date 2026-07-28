@@ -382,14 +382,14 @@ footer{
 
     border-top:1px solid rgba(255,255,255,.08);
 
-    footer p{
+}
+
+footer p{
 
     margin:8px 0;
 
     color:#94A3B8;
 
-}
-    
 }
 
 /* ===========================
