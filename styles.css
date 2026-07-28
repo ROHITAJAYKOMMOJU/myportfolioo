@@ -421,13 +421,11 @@ section p{
 
 footer{
 
-    padding:35px;
+    padding:50px;
 
     text-align:center;
 
     background:#020617;
-
-    color:#94A3B8;
 
     border-top:1px solid rgba(255,255,255,.08);
 
@@ -435,7 +433,7 @@ footer{
 
 footer p{
 
-    margin:8px 0;
+    margin:10px 0;
 
     color:#94A3B8;
 
